@@ -1,7 +1,11 @@
 const Contactpage = () => {
   return (
     <section id="contact" className="bg-black text-white py-24">
-      <div className="flex justify-center items-center">
+      <div
+        data-aos="fade"
+        data-aos-once="true"
+        className="flex justify-center items-center"
+      >
         <div className="border-2 border-slate-800 rounded bg-slate-800 p-6 md:p-10 w-full md:max-w-md">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">
             Contact Me!
