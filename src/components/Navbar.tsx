@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-slate-800 p-4 fixed w-full z-50">
+    <nav className="bg-slate-800 bg-opacity-30 backdrop-blur-lg p-4 fixed w-full z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex-shrink-0">
           <a href="/" className="text-white text-2xl font-bold">
@@ -32,37 +32,37 @@ const Navbar = () => {
           </IconButton>
         </div>
         <div className="hidden lg:flex lg:items-center lg:w-auto">
-          <div className="text-lg lg:flex-grow">
+          <div className="text-lg lg:flex-grow flex justify-center w-full">
             <a
               href="#home"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mx-4"
             >
               Home
             </a>
             <a
               href="#about"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mx-4"
             >
               About
             </a>
             <a
-              href="#project"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4"
+              href="#skills"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mx-4"
             >
-              Project
+              Skills
             </a>
             <a
-              href="#contact"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300"
+              href="#project"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mx-4"
             >
-              Contact
+              Project
             </a>
           </div>
         </div>
       </div>
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden mt-4">
+        <div className="lg:hidden mt-4 text-center">
           <a href="#home" className="block mt-2 text-white hover:text-gray-300">
             Home
           </a>
@@ -73,16 +73,16 @@ const Navbar = () => {
             About
           </a>
           <a
-            href="#project"
-            className="block mt-2 text-white hover:text-gray-300 mr-4"
-          >
-            Project
-          </a>
-          <a
-            href="#contact"
+            href="#skills"
             className="block mt-2 text-white hover:text-gray-300"
           >
-            Contact
+            Skills
+          </a>
+          <a
+            href="#project"
+            className="block mt-2 text-white hover:text-gray-300"
+          >
+            Project
           </a>
         </div>
       )}

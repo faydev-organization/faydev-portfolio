@@ -3,11 +3,12 @@
 import Navbar from "@/components/Navbar";
 import Homepage from "@/components/homepage";
 import Aboutpage from "@/components/aboutpage";
+import Skills from "@/components/pageComp/skills";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Projectpage from "@/components/projectpage";
-import Contactpage from "@/components/contactpage";
+// import Contactpage from "@/components/contactpage";
 
 const Home = () => {
   useEffect(() => {
@@ -24,8 +25,9 @@ const Home = () => {
       <Navbar />
       <Homepage />
       <Aboutpage />
+      <Skills />
       <Projectpage />
-      <Contactpage />
+      {/* <Contactpage /> */}
     </main>
   );
 };

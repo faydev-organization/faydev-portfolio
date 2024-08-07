@@ -2,7 +2,7 @@ const aboutpage = () => {
   return (
     <section
       id="about"
-      className="bg-black text-white pt-24 pb-20 px-4 md:px-0"
+      className="bg-black text-white pt-24 pb-20 px-4 cursor-default md:px-0"
     >
       <div
         data-aos="zoom-out"
