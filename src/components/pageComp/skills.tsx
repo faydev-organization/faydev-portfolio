@@ -16,6 +16,7 @@ import GitLogo from "../../../public/git.png";
 import GithubLogo from "../../../public/github.jpg";
 import NPMLogo from "../../../public/npm.png";
 import DockerLogo from "../../../public/docker.png";
+
 import { StaticImageData } from "next/image";
 
 interface Tech {
