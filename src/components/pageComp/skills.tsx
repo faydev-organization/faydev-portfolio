@@ -49,34 +49,36 @@ const tools: Tech[] = [
 
 const Skills: React.FC = () => {
   return (
-    <div className="h-full bg-black flex flex-col items-center justify-center">
-      <div className="mb-8">
-        <h2 className="text-white text-2xl mb-4">Tech Stack</h2>
-        <div className="grid grid-cols-4 gap-4">
-          {techStack.map((tech) => (
-            <TechCard
-              key={tech.name}
-              logo={tech.logo}
-              name={tech.name}
-              level={tech.level}
-            />
-          ))}
+    <section id="skills" className="bg-black py-20">
+      <div className="container mx-auto px-6 lg:px-8">
+        <div className="mb-12 text-center">
+          <h2 className="text-white text-4xl font-semibold mb-8">Tech Stack</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {techStack.map((tech) => (
+              <TechCard
+                key={tech.name}
+                logo={tech.logo}
+                name={tech.name}
+                level={tech.level}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="text-center">
+          <h2 className="text-white text-4xl font-semibold mb-8">Tools</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {tools.map((tool) => (
+              <TechCard
+                key={tool.name}
+                logo={tool.logo}
+                name={tool.name}
+                level={tool.level}
+              />
+            ))}
+          </div>
         </div>
       </div>
-      <div>
-        <h2 className="text-white text-2xl mb-4">Tools</h2>
-        <div className="grid grid-cols-4 gap-4">
-          {tools.map((tool) => (
-            <TechCard
-              key={tool.name}
-              logo={tool.logo}
-              name={tool.name}
-              level={tool.level}
-            />
-          ))}
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 

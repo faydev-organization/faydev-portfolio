@@ -10,8 +10,14 @@ interface TechCardProps {
 
 const TechCard: React.FC<TechCardProps> = ({ logo, name, level }) => {
   return (
-    <div className="relative flex items-center w-72 h-20 p-4 m-2 bg-black cursor-default rounded-lg shadow-md border border-white hover:bg-gray-700 transform hover:scale-110 transition-transform duration-300 group">
-      <Image src={logo} alt={name} className="w-auto h-12 mr-4 " />
+    <div className="relative flex items-center p-4 bg-black cursor-default rounded-lg shadow-md border border-white hover:bg-gray-700 transform hover:scale-105 transition-transform duration-300 group">
+      <div className="flex-shrink-0 mr-4">
+        <Image
+          src={logo}
+          alt={name}
+          className="w-12 h-12 sm:w-12 sm:h-12 lg:w-auto lg:h-12"
+        />
+      </div>
       <div className="flex-1 flex flex-col items-center justify-center">
         <span className="text-white text-center block group-hover:hidden">
           {name}

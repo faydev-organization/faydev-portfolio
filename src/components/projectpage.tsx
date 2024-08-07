@@ -91,6 +91,75 @@ const Projectpage = () => {
               Lihat
             </button>
           </div>
+          <div
+            data-aos="fade-left"
+            data-aos-once="true"
+            className="flex flex-col items-center justify-center border-2 bg-slate-700 border-slate-800 shadow-sm rounded p-6 md:p-10"
+          >
+            <img
+              className="w-52 h-auto mb-4"
+              src="/kopi.png"
+              alt="Coffee Shop"
+              width={200}
+              height={200}
+            />
+            <h2 className="font-bold text-xl md:text-2xl mb-2 text-center">
+              Coffee Shop
+            </h2>
+            <p className="text-center mb-4">Web produk kopi</p>
+            <button
+              className="text-white bg-slate-800 hover:bg-slate-700 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              onClick={() => alert("Coming soon")}
+            >
+              Lihat
+            </button>
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-once="true"
+            className="flex flex-col items-center justify-center border-2 bg-slate-700 border-slate-800 shadow-sm rounded p-6 md:p-10"
+          >
+            <img
+              className="w-52 h-auto mb-4"
+              src="/kopi.png"
+              alt="Coffee Shop"
+              width={200}
+              height={200}
+            />
+            <h2 className="font-bold text-xl md:text-2xl mb-2 text-center">
+              Coffee Shop
+            </h2>
+            <p className="text-center mb-4">Web produk kopi</p>
+            <button
+              className="text-white bg-slate-800 hover:bg-slate-700 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              onClick={() => alert("Coming soon")}
+            >
+              Lihat
+            </button>
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-once="true"
+            className="flex flex-col items-center justify-center border-2 bg-slate-700 border-slate-800 shadow-sm rounded p-6 md:p-10"
+          >
+            <img
+              className="w-52 h-auto mb-4"
+              src="/kopi.png"
+              alt="Coffee Shop"
+              width={200}
+              height={200}
+            />
+            <h2 className="font-bold text-xl md:text-2xl mb-2 text-center">
+              Coffee Shop
+            </h2>
+            <p className="text-center mb-4">Web produk kopi</p>
+            <button
+              className="text-white bg-slate-800 hover:bg-slate-700 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              onClick={() => alert("Coming soon")}
+            >
+              Lihat
+            </button>
+          </div>
         </div>
       </div>
     </section>

@@ -1,9 +1,9 @@
-// components/Navbar.js
 "use client";
 
 import { useState } from "react";
 import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,7 @@ const Navbar = () => {
             onClick={toggleMenu}
             className="text-white focus:outline-none focus:bg-gray-700"
           >
-            <MenuIcon />
+            {isOpen ? <CloseIcon /> : <MenuIcon />}
           </IconButton>
         </div>
         <div className="hidden lg:flex lg:items-center lg:w-auto">
@@ -63,24 +63,31 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden mt-4 text-center">
-          <a href="#home" className="block mt-2 text-white hover:text-gray-300">
+          <a
+            href="#home"
+            className="block mt-2 text-white hover:text-gray-300"
+            onClick={() => setIsOpen(false)}
+          >
             Home
           </a>
           <a
             href="#about"
             className="block mt-2 text-white hover:text-gray-300"
+            onClick={() => setIsOpen(false)}
           >
             About
           </a>
           <a
             href="#skills"
             className="block mt-2 text-white hover:text-gray-300"
+            onClick={() => setIsOpen(false)}
           >
             Skills
           </a>
           <a
             href="#project"
             className="block mt-2 text-white hover:text-gray-300"
+            onClick={() => setIsOpen(false)}
           >
             Project
           </a>
