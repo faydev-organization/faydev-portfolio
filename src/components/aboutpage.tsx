@@ -1,4 +1,4 @@
-const aboutpage = () => {
+const Aboutpage = () => {
   return (
     <section
       id="about"
@@ -12,11 +12,11 @@ const aboutpage = () => {
         <h1 className="text-5xl font-bold">HELLO!</h1>
         <p className="text-xl">I am a Full-Stack Web Developer.</p>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start justify-center max-w-screen-xl mx-auto px-2 md:px-10">
         <div
           data-aos="fade-down-right"
           data-aos-once="true"
-          className="flex flex-col gap-8 pt-10 md:pt-0 px-2 md:p-10 w-full md:w-1/2 max-w-screen-lg"
+          className="flex flex-col gap-8 pt-10 md:pt-0 w-full"
         >
           <h2 className="text-3xl font-semibold">About Me</h2>
           <p className="text-lg md:text-xl text-justify">
@@ -32,7 +32,7 @@ const aboutpage = () => {
         <div
           data-aos="fade-up-left"
           data-aos-once="true"
-          className="flex flex-col gap-8 pt-10 md:pt-0 px-2 md:p-10 w-full md:w-1/2 max-w-screen-lg"
+          className="flex flex-col gap-8 pt-10 md:pt-0 w-full"
         >
           <h2 className="text-3xl font-semibold">Details</h2>
           <div className="flex flex-col gap-3">
@@ -62,4 +62,4 @@ const aboutpage = () => {
   );
 };
 
-export default aboutpage;
+export default Aboutpage;

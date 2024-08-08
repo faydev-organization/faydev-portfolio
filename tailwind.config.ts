@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       boxShadow: {
         "custom-white": "0px 0px 90px 2px rgba(255, 255, 255, 0.8)",
+        "custom-white-mini": "0px 0px 20px 2px rgba(255, 255, 255, 0.5)",
+        "custom-white-mini2": "0px 0px 10px 2px rgba(255, 255, 255, 0.5)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -20,4 +22,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

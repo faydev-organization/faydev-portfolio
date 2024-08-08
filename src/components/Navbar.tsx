@@ -13,12 +13,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-slate-800 bg-opacity-30 backdrop-blur-lg p-4 fixed w-full z-50">
+    <nav className="bg-black lg:bg-slate-800 lg:bg-opacity-30 lg:backdrop-blur-lg p-4 fixed w-full z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex-shrink-0">
           <a href="/" className="text-white text-2xl font-bold">
             Fay
-            <span className="border-2 mx-1 px-2 py-1 rounded-lg text-slate-800 bg-white border-slate-800">
+            <span className="border-2 shadow-custom-white mx-1 px-2 py-1 rounded-lg text-slate-800 bg-white border-slate-800">
               DEV
             </span>
           </a>
@@ -62,7 +62,7 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden mt-4 text-center">
+        <div className="lg:hidden mt-4 text-center bg-black bg-opacity-70 backdrop-blur-lg p-4 rounded-lg">
           <a
             href="#home"
             className="block mt-2 text-white hover:text-gray-300"

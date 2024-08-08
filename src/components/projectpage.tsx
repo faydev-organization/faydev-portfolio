@@ -4,9 +4,9 @@ const Projectpage = () => {
   return (
     <section
       id="project"
-      className="bg-black text-white pt-24 pb-10 px-4 md:px-0"
+      className="bg-black text-white pt-24 pb-10 px-4 md:px-8 lg:px-16"
     >
-      <div className="max-w-screen-xl mx-auto">
+      <div className="max-w-screen mx-auto">
         <div className="text-center mb-10">
           <h1
             data-aos="fade"
@@ -21,10 +21,10 @@ const Projectpage = () => {
           <div
             data-aos="fade-right"
             data-aos-once="true"
-            className="flex flex-col items-center justify-center border-2 bg-slate-700 border-slate-800 shadow-sm rounded-xl p-6 md:p-10"
+            className="flex flex-col items-center justify-center border-2 bg-black border-white shadow-sm rounded-xl p-6 md:p-10"
           >
             <img
-              className="w-52 h-auto mb-4"
+              className="w-52 h-auto mb-4 border-2 border-white rounded shadow-custom-white-mini"
               src="/todo.png"
               alt="Todo List"
               width={200}
@@ -35,7 +35,7 @@ const Projectpage = () => {
             </h2>
             <p className="text-center mb-4">Web untuk membuat to do list</p>
             <button
-              className="text-white bg-slate-800 hover:bg-slate-700 focus:ring-4 focus:ring-slate-300 font-medium rounded-xl-lg text-sm px-5 py-2.5 text-center"
+              className="text-white bg-black border border-white shadow-custom-white-mini hover:bg-white hover:text-black focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
               onClick={() => alert("Coming soon")}
             >
               Lihat
@@ -46,10 +46,10 @@ const Projectpage = () => {
           <div
             data-aos="fade-up"
             data-aos-once="true"
-            className="flex flex-col items-center justify-center border-2 bg-slate-700 border-slate-800 shadow-sm rounded-xl p-6 md:p-10"
+            className="flex flex-col items-center justify-center border-2 bg-black border-white shadow-sm rounded-xl p-6 md:p-10"
           >
             <img
-              className="w-52 h-auto mb-4"
+              className="w-52 h-auto mb-4 border-2 border-white rounded shadow-custom-white-mini"
               src="/umkm.png"
               alt="FayFood Salad"
               width={200}
@@ -60,8 +60,8 @@ const Projectpage = () => {
             </h2>
             <p className="text-center mb-4">Web produk salad</p>
             <button
-              className="text-white bg-slate-800 hover:bg-slate-700 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-              onClick={() => alert("Coming soon")}
+              className="text-white bg-black border border-white shadow-custom-white-mini hover:bg-white hover:text-black focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              onClick={() => window.open("https://umkm-fayfood.vercel.app/")}
             >
               Lihat
             </button>
@@ -71,33 +71,37 @@ const Projectpage = () => {
           <div
             data-aos="fade-left"
             data-aos-once="true"
-            className="flex flex-col items-center justify-center border-2 bg-slate-700 border-slate-800 shadow-sm rounded p-6 md:p-10"
+            className="flex flex-col items-center justify-center border-2 bg-black border-white shadow-sm rounded p-6 md:p-10"
           >
             <img
-              className="w-52 h-auto mb-4"
-              src="/kopi.png"
-              alt="Coffee Shop"
+              className="w-52 h-auto mb-4 border-2 border-white rounded shadow-custom-white-mini"
+              src="/company-profile.png"
+              alt="Idol Company"
               width={200}
               height={200}
             />
             <h2 className="font-bold text-xl md:text-2xl mb-2 text-center">
-              Coffee Shop
+              Idol Company
             </h2>
-            <p className="text-center mb-4">Web produk kopi</p>
+            <p className="text-center mb-4">Web Company Profile</p>
             <button
-              className="text-white bg-slate-800 hover:bg-slate-700 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-              onClick={() => alert("Coming soon")}
+              className="text-white bg-black border border-white shadow-custom-white-mini hover:bg-white hover:text-black focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              onClick={() =>
+                window.open("https://idol-group-company.vercel.app/")
+              }
             >
               Lihat
             </button>
           </div>
+
+          {/* Project 4 */}
           <div
             data-aos="fade-left"
             data-aos-once="true"
-            className="flex flex-col items-center justify-center border-2 bg-slate-700 border-slate-800 shadow-sm rounded p-6 md:p-10"
+            className="flex flex-col items-center justify-center border-2 bg-black border-white shadow-sm rounded p-6 md:p-10"
           >
             <img
-              className="w-52 h-auto mb-4"
+              className="w-52 h-auto mb-4 border-2 border-white rounded shadow-custom-white-mini"
               src="/kopi.png"
               alt="Coffee Shop"
               width={200}
@@ -108,54 +112,10 @@ const Projectpage = () => {
             </h2>
             <p className="text-center mb-4">Web produk kopi</p>
             <button
-              className="text-white bg-slate-800 hover:bg-slate-700 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-              onClick={() => alert("Coming soon")}
-            >
-              Lihat
-            </button>
-          </div>
-          <div
-            data-aos="fade-left"
-            data-aos-once="true"
-            className="flex flex-col items-center justify-center border-2 bg-slate-700 border-slate-800 shadow-sm rounded p-6 md:p-10"
-          >
-            <img
-              className="w-52 h-auto mb-4"
-              src="/kopi.png"
-              alt="Coffee Shop"
-              width={200}
-              height={200}
-            />
-            <h2 className="font-bold text-xl md:text-2xl mb-2 text-center">
-              Coffee Shop
-            </h2>
-            <p className="text-center mb-4">Web produk kopi</p>
-            <button
-              className="text-white bg-slate-800 hover:bg-slate-700 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-              onClick={() => alert("Coming soon")}
-            >
-              Lihat
-            </button>
-          </div>
-          <div
-            data-aos="fade-left"
-            data-aos-once="true"
-            className="flex flex-col items-center justify-center border-2 bg-slate-700 border-slate-800 shadow-sm rounded p-6 md:p-10"
-          >
-            <img
-              className="w-52 h-auto mb-4"
-              src="/kopi.png"
-              alt="Coffee Shop"
-              width={200}
-              height={200}
-            />
-            <h2 className="font-bold text-xl md:text-2xl mb-2 text-center">
-              Coffee Shop
-            </h2>
-            <p className="text-center mb-4">Web produk kopi</p>
-            <button
-              className="text-white bg-slate-800 hover:bg-slate-700 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-              onClick={() => alert("Coming soon")}
+              className="text-white bg-black border border-white shadow-custom-white-mini hover:bg-white hover:text-black focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              onClick={() =>
+                window.open("https://coffee-shop-ten-woad.vercel.app/")
+              }
             >
               Lihat
             </button>

@@ -18,14 +18,14 @@ const Homepage = () => {
           <div
             data-aos="fade-left"
             data-aos-once="true"
-            className="flex flex-col md:flex-row p-8 mx-10 gap-8 items-center justify-center"
+            className="flex flex-col md:flex-row p-8 mx-10 gap-20 items-center justify-center"
           >
             <div className="mr-8 md:mr-12">
               <Image
                 data-aos="fade"
                 data-aos-once="true"
                 data-aos-delay="1000"
-                className="rounded-full object-cover w-[500px] h-[500px] border-4 border-white shadow-custom-white"
+                className="rounded-full object-cover w-[500px] h-auto border-4 border-white shadow-custom-white"
                 src={ProfilePic}
                 alt="profile"
                 width={200}
@@ -61,15 +61,15 @@ const Homepage = () => {
                   ]}
                   wrapper="span"
                   speed={50}
-                  style={{ fontSize: "1.5em", display: "inline-block" }}
+                  style={{ fontSize: "1.3em", display: "inline-block" }}
                   repeat={Infinity}
-                  className="text-4xl text-white"
+                  className="text-3xl text-white"
                 />
               </div>
               <p className="text-lg md:text-2xl">
                 Welcome To My Personal Website
               </p>
-              <div className="flex ml-20  gap-10">
+              <div className="flex justify-center gap-10">
                 <InstagramIcon
                   className="cursor-pointer hover:text-slate-500"
                   style={{ fontSize: 30 }}

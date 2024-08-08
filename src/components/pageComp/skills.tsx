@@ -26,25 +26,25 @@ interface Tech {
 }
 
 const techStack: Tech[] = [
-  { name: "HTML", logo: HTMLlogo, level: "Dasar" },
-  { name: "CSS", logo: CSSlogo, level: "Dasar" },
-  { name: "JavaScript", logo: JSlogo, level: "Dasar" },
-  { name: "TypeScript", logo: TSlogo, level: "Menengah" },
-  { name: "Bootstrap", logo: BootstrapLogo, level: "Dasar" },
-  { name: "Tailwind", logo: TailwindLogo, level: "Menengah" },
-  { name: "ReactJS", logo: ReactLogo, level: "Menengah" },
-  { name: "NextJS", logo: NextLogo, level: "Menengah" },
-  { name: "NodeJS", logo: NodeLogo, level: "Menengah" },
-  { name: "ExpressJS", logo: ExpressLogo, level: "Menengah" },
-  { name: "Prisma", logo: PrismaLogo, level: "Menengah" },
-  { name: "Mysql", logo: MySQLLogo, level: "Dasar" },
+  { name: "HTML", logo: HTMLlogo, level: "comming soon" },
+  { name: "CSS", logo: CSSlogo, level: "comming soon" },
+  { name: "JavaScript", logo: JSlogo, level: "comming soon" },
+  { name: "TypeScript", logo: TSlogo, level: "comming soon" },
+  { name: "Bootstrap", logo: BootstrapLogo, level: "comming soon" },
+  { name: "Tailwind", logo: TailwindLogo, level: "comming soon" },
+  { name: "ReactJS", logo: ReactLogo, level: "comming soon" },
+  { name: "NextJS", logo: NextLogo, level: "comming soon" },
+  { name: "NodeJS", logo: NodeLogo, level: "comming soon" },
+  { name: "ExpressJS", logo: ExpressLogo, level: "comming soon" },
+  { name: "Prisma", logo: PrismaLogo, level: "comming soon" },
+  { name: "Mysql", logo: MySQLLogo, level: "comming soon" },
 ];
 
 const tools: Tech[] = [
-  { name: "Git", logo: GitLogo, level: "Dasar" },
-  { name: "Github", logo: GithubLogo, level: "Dasar" },
-  { name: "NPM", logo: NPMLogo, level: "Menengah" },
-  { name: "Docker", logo: DockerLogo, level: "Lanjutan" },
+  { name: "Git", logo: GitLogo, level: "comming soon" },
+  { name: "Github", logo: GithubLogo, level: "comming soon" },
+  { name: "NPM", logo: NPMLogo, level: "comming soon" },
+  { name: "Docker", logo: DockerLogo, level: "comming soon" },
 ];
 
 const Skills: React.FC = () => {
