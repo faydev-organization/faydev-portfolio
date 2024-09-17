@@ -7,9 +7,13 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import ProfilePic from "../../public/36853C7D-C019-4466-95A6-86603EC44E9C_1_105_c.jpeg";
+import { BackgroundBeams } from "./ui/background-beams";
+import { FlipWords } from "./ui/flip-words";
+import { Cover } from "./ui/cover";
 const Homepage = () => {
   return (
     <>
+      <BackgroundBeams />
       <section
         id="home"
         className="bg-black text-white pt-24 py-12 md:py-24 lg:min-h-screen lg:flex lg:items-center lg:justify-center"
@@ -42,28 +46,22 @@ const Homepage = () => {
               >
                 Hello World, I'm
               </p>
-              <h2 className="font-bold text-3xl md:text-4xl">
+
+              <Cover className="font-bold text-3xl md:text-4xl">
                 Muhammad Fayash Wahyudha
-              </h2>
-              <div className="bg-background rounded-md p-1.5 hover:cursor-default">
-                <TypeAnimation
-                  sequence={[
+              </Cover>
+              <div className="bg-transparent rounded-md p-1.5 hover:cursor-default flex ">
+                <h1 className="text-2xl text-white">I'm</h1>
+                <FlipWords
+                  className="text-2xl text-white "
+                  words={[
                     "Web Developer",
-                    1000,
                     "Full-Stack Developer",
-                    1000,
                     "Front-End Developer",
-                    1000,
                     "Back-End Developer",
-                    1000,
                     "Freelancer",
-                    1000,
                   ]}
-                  wrapper="span"
-                  speed={50}
-                  style={{ fontSize: "1.3em", display: "inline-block" }}
-                  repeat={Infinity}
-                  className="text-3xl text-white"
+                  duration={1500}
                 />
               </div>
               <p className="text-lg md:text-2xl">

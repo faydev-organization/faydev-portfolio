@@ -1,4 +1,41 @@
 import Image from "next/image";
+import React from "react";
+import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+
+const projects = [
+  {
+    title: "To Do List",
+    description: "Web untuk membuat to do list",
+    imageUrl: "/todo.png",
+    previewLink: "#",
+    repoLink: "#",
+    altText: "Todo List",
+  },
+  {
+    title: "FayFood Salad",
+    description: "Web produk salad",
+    imageUrl: "/umkm.png",
+    previewLink: "https://umkm-fayfood.vercel.app/",
+    repoLink: "#",
+    altText: "FayFood Salad",
+  },
+  {
+    title: "Idol Company",
+    description: "Web Company Profile",
+    imageUrl: "/company-profile.png",
+    previewLink: "https://idol-group-company.vercel.app/",
+    repoLink: "#",
+    altText: "Idol Company",
+  },
+  {
+    title: "Coffee Shop",
+    description: "Web produk kopi",
+    imageUrl: "/kopi.png",
+    previewLink: "https://coffee-shop-ten-woad.vercel.app/",
+    repoLink: "#",
+    altText: "Coffee Shop",
+  },
+];
 
 const Projectpage = () => {
   return (
@@ -8,118 +45,62 @@ const Projectpage = () => {
     >
       <div className="max-w-screen mx-auto">
         <div className="text-center mb-10">
-          <h1
-            data-aos="fade"
-            data-aos-once="true"
-            className="text-4xl font-bold"
-          >
-            My Projects
-          </h1>
+          <h1 className="text-4xl font-bold">My Projects</h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Project 1 */}
-          <div
-            data-aos="fade-right"
-            data-aos-once="true"
-            className="flex flex-col items-center justify-center border-2 bg-black border-white shadow-sm rounded-xl p-6 md:p-10"
-          >
-            <img
-              className="w-52 h-auto mb-4 border-2 border-white rounded shadow-custom-white-mini"
-              src="/todo.png"
-              alt="Todo List"
-              width={200}
-              height={200}
-            />
-            <h2 className="font-bold text-xl md:text-2xl mb-2 text-center">
-              TO DO LIST
-            </h2>
-            <p className="text-center mb-4">Web untuk membuat to do list</p>
-            <button
-              className="text-white bg-black border border-white shadow-custom-white-mini hover:bg-white hover:text-black focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-              onClick={() => alert("Coming soon")}
-            >
-              Lihat
-            </button>
-          </div>
-
-          {/* Project 2 */}
-          <div
-            data-aos="fade-up"
-            data-aos-once="true"
-            className="flex flex-col items-center justify-center border-2 bg-black border-white shadow-sm rounded-xl p-6 md:p-10"
-          >
-            <img
-              className="w-52 h-auto mb-4 border-2 border-white rounded shadow-custom-white-mini"
-              src="/umkm.png"
-              alt="FayFood Salad"
-              width={200}
-              height={200}
-            />
-            <h2 className="font-bold text-xl md:text-2xl mb-2 text-center">
-              FayFood Salad
-            </h2>
-            <p className="text-center mb-4">Web produk salad</p>
-            <button
-              className="text-white bg-black border border-white shadow-custom-white-mini hover:bg-white hover:text-black focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-              onClick={() => window.open("https://umkm-fayfood.vercel.app/")}
-            >
-              Lihat
-            </button>
-          </div>
-
-          {/* Project 3 */}
-          <div
-            data-aos="fade-left"
-            data-aos-once="true"
-            className="flex flex-col items-center justify-center border-2 bg-black border-white shadow-sm rounded p-6 md:p-10"
-          >
-            <img
-              className="w-52 h-auto mb-4 border-2 border-white rounded shadow-custom-white-mini"
-              src="/company-profile.png"
-              alt="Idol Company"
-              width={200}
-              height={200}
-            />
-            <h2 className="font-bold text-xl md:text-2xl mb-2 text-center">
-              Idol Company
-            </h2>
-            <p className="text-center mb-4">Web Company Profile</p>
-            <button
-              className="text-white bg-black border border-white shadow-custom-white-mini hover:bg-white hover:text-black focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-              onClick={() =>
-                window.open("https://idol-group-company.vercel.app/")
-              }
-            >
-              Lihat
-            </button>
-          </div>
-
-          {/* Project 4 */}
-          <div
-            data-aos="fade-left"
-            data-aos-once="true"
-            className="flex flex-col items-center justify-center border-2 bg-black border-white shadow-sm rounded p-6 md:p-10"
-          >
-            <img
-              className="w-52 h-auto mb-4 border-2 border-white rounded shadow-custom-white-mini"
-              src="/kopi.png"
-              alt="Coffee Shop"
-              width={200}
-              height={200}
-            />
-            <h2 className="font-bold text-xl md:text-2xl mb-2 text-center">
-              Coffee Shop
-            </h2>
-            <p className="text-center mb-4">Web produk kopi</p>
-            <button
-              className="text-white bg-black border border-white shadow-custom-white-mini hover:bg-white hover:text-black focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-              onClick={() =>
-                window.open("https://coffee-shop-ten-woad.vercel.app/")
-              }
-            >
-              Lihat
-            </button>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
+          {projects.map((project, index) => (
+            <CardContainer className="inter-var" key={index}>
+              <CardBody className="bg-transparent w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardItem
+                  translateZ="50"
+                  className="text-xl font-bold text-white"
+                >
+                  {project.title}
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-400 text-sm max-w-sm mt-2"
+                >
+                  {project.description}
+                </CardItem>
+                <CardItem
+                  translateZ="100"
+                  rotateX={20}
+                  rotateZ={-10}
+                  className="w-full mt-4"
+                >
+                  <Image
+                    src={project.imageUrl}
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt={project.altText}
+                  />
+                </CardItem>
+                <div className="flex justify-between items-center mt-20">
+                  <CardItem
+                    translateZ={20}
+                    translateX={-40}
+                    as="button"
+                    className="px-4 py-2 rounded-xl text-xs font-normal text-white"
+                    onClick={() => window.open(project.previewLink)}
+                  >
+                    Preview →
+                  </CardItem>
+                  <CardItem
+                    translateZ={20}
+                    translateX={40}
+                    as="button"
+                    className="px-4 py-2 rounded-full text-white text-xs font-bold border border-white hover:bg-white hover:text-black"
+                    onClick={() => window.open(project.repoLink)}
+                  >
+                    Repository
+                  </CardItem>
+                </div>
+              </CardBody>
+            </CardContainer>
+          ))}
         </div>
       </div>
     </section>

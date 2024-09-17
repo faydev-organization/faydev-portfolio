@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Homepage from "@/components/homepage";
 import Aboutpage from "@/components/aboutpage";
 import Skills from "@/components/pageComp/skills";
+import Previews from "@/components/Previews";
 import Projectpage from "@/components/projectpage";
 // import Contactpage from "@/components/contactpage";
 import { useEffect } from "react";
@@ -33,6 +34,7 @@ const Home = () => {
       <Navbar />
       <Homepage />
       <Aboutpage />
+      <Previews />
       <Skills />
       <Projectpage />
       {/* <Contactpage /> */}
