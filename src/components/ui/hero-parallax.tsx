@@ -141,6 +141,7 @@ export const ProductCard = ({
       <Link
         href={product.link}
         className="block group-hover/product:shadow-2xl "
+        onClick={(e) => alert("on development")}
       >
         <Image
           src={product.thumbnail}
