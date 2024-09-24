@@ -6,11 +6,13 @@ import Aboutpage from "@/components/aboutpage";
 import Skills from "@/components/pageComp/skills";
 import Previews from "@/components/Previews";
 import Projectpage from "@/components/projectpage";
+import BreakRows from "@/components/section/BreakRows";
 // import Contactpage from "@/components/contactpage";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 
 const Home = () => {
   const router = useRouter();
@@ -33,6 +35,7 @@ const Home = () => {
     <main>
       <Navbar />
       <Homepage />
+      <BreakRows />
       <Aboutpage />
       <Previews />
       <Skills />

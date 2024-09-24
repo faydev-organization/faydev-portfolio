@@ -41,7 +41,7 @@ const Projectpage = () => {
   return (
     <section
       id="project"
-      className="bg-black text-white pt-24 pb-10 px-4 md:px-8 lg:px-16"
+      className="bg-zinc-800 text-white pt-24 pb-10 px-4 md:px-8 lg:px-16"
     >
       <div className="max-w-screen mx-auto">
         <div className="text-center mb-10">

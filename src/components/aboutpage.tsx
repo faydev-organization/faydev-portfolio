@@ -1,61 +1,51 @@
+import IconCloud from "@/components/magicui/icon-cloud";
+
+const slugs = [
+  "typescript",
+  "javascript",
+  "react",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "prisma",
+  "vercel",
+  "cypress",
+  "docker",
+  "git",
+  "github",
+  "visualstudiocode",
+];
 const Aboutpage = () => {
   return (
     <section
       id="about"
-      className="bg-black text-white pt-24 pb-20 px-4 cursor-default md:px-0"
+      className="bg-zinc-800 text-white pt-24 pb-20 px-4 cursor-default md:px-0"
     >
-      <div
-        data-aos="zoom-out"
-        data-aos-once="true"
-        className="flex flex-col items-center justify-center mb-10 md:mb-20"
-      >
+      <div className="flex flex-col items-center justify-center mb-10 md:mb-20">
         <h1 className="text-5xl font-bold">HELLO!</h1>
         <p className="text-xl">I am a Full-Stack Web Developer.</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start justify-center max-w-screen-xl mx-auto px-2 md:px-10">
-        <div
-          data-aos="fade-down-right"
-          data-aos-once="true"
-          className="flex flex-col gap-8 pt-10 md:pt-0 w-full"
-        >
-          <h2 className="text-3xl font-semibold">About Me</h2>
-          <p className="text-lg md:text-xl text-justify">
-            Hello everyone, I'm Muhammad Fayash Wahyudha, a web developer based
-            in Jakarta, Indonesia. Currently, I am studying Full-stack Web
-            Development at Purwadhika Digital Technology School. I am passionate
-            about my work and find joy in what I do. My expertise lies in
-            building functional, user-friendly, and visually appealing websites.
-            I possess strong skills in leadership, communication, teamwork, and
-            adapting to new challenges.
-          </p>
-        </div>
-        <div
-          data-aos="fade-up-left"
-          data-aos-once="true"
-          className="flex flex-col gap-8 pt-10 md:pt-0 w-full"
-        >
-          <h2 className="text-3xl font-semibold">Details</h2>
-          <div className="flex flex-col gap-3">
-            <div className="flex gap-3">
-              <h3 className="text-xl font-semibold w-24">Name:</h3>
-              <p>Muhammad Fayash Wahyudha</p>
-            </div>
-            <div className="flex gap-3">
-              <h3 className="text-xl font-semibold w-24">Age:</h3>
-              <p>19</p>
-            </div>
-            <div className="flex gap-3">
-              <h3 className="text-xl font-semibold w-24">Location:</h3>
-              <p>Jakarta, Indonesia</p>
-            </div>
-            <div className="flex gap-3">
-              <h3 className="text-xl font-semibold w-24">Skills:</h3>
-              <p className="text-lg md:text-base">
-                HTML, CSS, JavaScript, React, Next, Tailwind, Bootstrap, NPM,
-                TypeScript, and GitHub
-              </p>
-            </div>
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center max-w-screen-xl mx-auto px-2 md:px-10">
+        <h1 className="flex items center justify-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          dignissimos amet magni, fugiat inventore in iure. Incidunt ea cum
+          alias recusandae iste debitis ab ullam? Architecto, accusamus ab.
+          Tempora accusantium voluptatibus porro voluptatum non vitae fuga! Enim
+          error quo consequuntur modi blanditiis impedit earum tempore,
+          exercitationem quam distinctio ipsum saepe veniam officia dolor, fuga
+          dolore vel iure, sint libero sequi recusandae quaerat voluptate
+          accusantium. Alias, modi veniam, iusto nemo quos mollitia, quo quas
+          eaque tenetur qui a nesciunt explicabo in velit? Quia excepturi
+          officia quibusdam nulla. Omnis cum commodi, itaque similique tenetur
+          tempora a eaque blanditiis sequi, consectetur assumenda, aliquid
+          tempore saepe quaerat ratione sint aut obcaecati placeat doloremque
+          nesciunt ipsum temporibus sit? Quisquam aperiam atque in alias. Culpa,
+          in!
+        </h1>
+        <div>
+          <IconCloud iconSlugs={slugs} />
         </div>
       </div>
     </section>

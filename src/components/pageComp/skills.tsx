@@ -49,7 +49,7 @@ const tools: Tech[] = [
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="bg-black py-20">
+    <section id="skills" className="bg-zinc-800 py-20">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h2 className="text-white text-4xl font-semibold mb-8">Tech Stack</h2>

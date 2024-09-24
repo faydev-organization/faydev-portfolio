@@ -5,18 +5,15 @@ import { TypeAnimation } from "react-type-animation";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
-import ProfilePic from "../../public/36853C7D-C019-4466-95A6-86603EC44E9C_1_105_c.jpeg";
-import { BackgroundBeams } from "./ui/background-beams";
+import ProfilePic from "../../public/photos.jpeg";
 import { FlipWords } from "./ui/flip-words";
 import { Cover } from "./ui/cover";
 const Homepage = () => {
   return (
     <>
-      <BackgroundBeams />
       <section
         id="home"
-        className="bg-black text-white pt-24 py-12 md:py-24 lg:min-h-screen lg:flex lg:items-center lg:justify-center"
+        className="bg-zinc-800 text-white pt-24 py-12 md:py-24 lg:min-h-screen lg:flex lg:items-center lg:justify-center"
       >
         <div className="flex justify-center items-center">
           <div
@@ -32,8 +29,8 @@ const Homepage = () => {
                 className="rounded-full object-cover w-[500px] h-auto border-4 border-white shadow-custom-white"
                 src={ProfilePic}
                 alt="profile"
-                width={200}
-                height={200}
+                width={600}
+                height={600}
               />
             </div>
 
