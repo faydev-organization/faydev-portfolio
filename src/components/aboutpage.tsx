@@ -1,4 +1,5 @@
 import IconCloud from "@/components/magicui/icon-cloud";
+import TextRevealByWord from "./magicui/text-reveal"; // Ensure this points to the correct component
 
 const slugs = [
   "typescript",
@@ -17,35 +18,26 @@ const slugs = [
   "github",
   "visualstudiocode",
 ];
+
 const Aboutpage = () => {
   return (
     <section
       id="about"
-      className="bg-zinc-800 text-white pt-24 pb-20 px-4 cursor-default md:px-0"
+      className="bg-zinc-800 text-white pt-24 pb-10 px-4 cursor-default md:px-0"
     >
-      <div className="flex flex-col items-center justify-center mb-10 md:mb-20">
-        <h1 className="text-5xl font-bold">HELLO!</h1>
-        <p className="text-xl">I am a Full-Stack Web Developer.</p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center max-w-screen-xl mx-auto px-2 md:px-10">
-        <h1 className="flex items center justify-center">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          dignissimos amet magni, fugiat inventore in iure. Incidunt ea cum
-          alias recusandae iste debitis ab ullam? Architecto, accusamus ab.
-          Tempora accusantium voluptatibus porro voluptatum non vitae fuga! Enim
-          error quo consequuntur modi blanditiis impedit earum tempore,
-          exercitationem quam distinctio ipsum saepe veniam officia dolor, fuga
-          dolore vel iure, sint libero sequi recusandae quaerat voluptate
-          accusantium. Alias, modi veniam, iusto nemo quos mollitia, quo quas
-          eaque tenetur qui a nesciunt explicabo in velit? Quia excepturi
-          officia quibusdam nulla. Omnis cum commodi, itaque similique tenetur
-          tempora a eaque blanditiis sequi, consectetur assumenda, aliquid
-          tempore saepe quaerat ratione sint aut obcaecati placeat doloremque
-          nesciunt ipsum temporibus sit? Quisquam aperiam atque in alias. Culpa,
-          in!
-        </h1>
-        <div>
-          <IconCloud iconSlugs={slugs} />
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-6 justify-center max-w-screen-xl mx-auto px-2 md:px-10">
+        <div className="md:col-span-2">
+          <div className="sticky top-32 mt-[130px]">
+            <IconCloud iconSlugs={slugs} />
+          </div>
+        </div>
+        <div className="md:col-span-3 flex flex-col items-center">
+          <div className="relative">
+            <TextRevealByWord
+              className="text-lg text-justify"
+              text="I am Muhammad Fayash Wahyudha, a graduate in Full-stack Web Development from Purwadhika Digital Technology School. Throughout my studies, I developed a solid foundation in various web technologies and honed my skills in both frontend and backend development. I possess strong leadership abilities and excel in effective communication, allowing me to collaborate seamlessly with team members and stakeholders. My collaborative spirit drives me to foster positive working relationships, ensuring that everyone feels valued and motivated. I am a quick learner and thrive in dynamic environments, always ready to tackle new challenges head-on. My passion for technology fuels my desire to stay updated with industry trends and best practices. I am particularly excited about the potential for innovation in the tech space and am eager to contribute to projects that make a meaningful impact. I look forward to the opportunity to work on groundbreaking solutions and grow alongside talented professionals in the field."
+            />
+          </div>
         </div>
       </div>
     </section>
