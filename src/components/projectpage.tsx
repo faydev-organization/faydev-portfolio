@@ -47,7 +47,7 @@ const Projectpage = () => {
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold">My Projects</h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
+        <div className="flex flex-wrap justify-center gap-10">
           {projects.map((project, index) => (
             <CardContainer className="inter-var" key={index}>
               <CardBody className="bg-transparent w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">

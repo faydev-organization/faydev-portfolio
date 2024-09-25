@@ -7,84 +7,78 @@ const products = [
   {
     title: "Moonbeam",
     link: "",
-    thumbnail: "/todo.png",
+    thumbnail: "/company-profile.png",
   },
   {
-    title: "Cursor",
+    title: "Starry Night",
     link: "",
     thumbnail: "/umkm.png",
   },
   {
-    title: "Rogue",
+    title: "Sunrise",
+    link: "",
+    thumbnail: "/todo.png",
+  },
+  {
+    title: "Ocean Wave",
+    link: "",
+    thumbnail: "/kopi.png",
+  },
+  {
+    title: "Forest Whisper",
     link: "",
     thumbnail: "/company-profile.png",
   },
   {
-    title: "Editorially",
-    link: "",
-    thumbnail: "/kopi.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "",
-    thumbnail: "/todo.png",
-  },
-  {
-    title: "Pixel Perfect",
-    link: "",
-    thumbnail: "/kopi.png",
-  },
-  {
-    title: "Algochurn",
+    title: "Desert Mirage",
     link: "",
     thumbnail: "/umkm.png",
   },
   {
-    title: "Aceternity UI",
+    title: "Mountain Echo",
     link: "",
     thumbnail: "/todo.png",
   },
   {
-    title: "Tailwind Master Kit",
+    title: "City Lights",
     link: "",
     thumbnail: "/kopi.png",
   },
-  // {
-  //   title: "SmartBridge",
-  //   link: "",
-  //   thumbnail:
-  //     "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-  // },
-  // {
-  //   title: "Renderwork Studio",
-  //   link: "",
-  //   thumbnail:
-  //     "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-  // },
-  // {
-  //   title: "Creme Digital",
-  //   link: "",
-  //   thumbnail:
-  //     "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
-  // },
-  // {
-  //   title: "Golden Bells Academy",
-  //   link: "",
-  //   thumbnail:
-  //     "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
-  // },
-  // {
-  //   title: "Invoker Labs",
-  //   link: "",
-  //   thumbnail:
-  //     "https://aceternity.com/images/products/thumbnails/new/invoker.png",
-  // },
-  // {
-  //   title: "E Free Invoice",
-  //   link: "",
-  //   thumbnail:
-  //     "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
-  // },
+  {
+    title: "Night Sky",
+    link: "",
+    thumbnail: "/todo.png",
+  },
+  {
+    title: "River Flow",
+    link: "",
+    thumbnail: "/company-profile.png",
+  },
+  {
+    title: "Valley View",
+    link: "",
+    thumbnail: "/kopi.png",
+  },
+  {
+    title: "Meadow Breeze",
+    link: "",
+    thumbnail: "/umkm.png",
+  },
+  {
+    title: "Twilight Dream",
+    link: "",
+    thumbnail: "/todo.png",
+  },
+  {
+    title: "Canyon Echoes",
+    link: "",
+    thumbnail: "/company-profile.png",
+  },
+  {
+    title: "Garden Path",
+    link: "",
+    thumbnail: "/kopi.png",
+  },
 ];
 
 const Preview = () => {

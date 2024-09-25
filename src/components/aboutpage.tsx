@@ -26,7 +26,7 @@ const Aboutpage = () => {
       className="bg-zinc-800 text-white pt-24 pb-10 px-4 cursor-default md:px-0"
     >
       <div className="grid grid-cols-1 md:grid-cols-5 gap-6 justify-center max-w-screen-xl mx-auto px-2 md:px-10">
-        <div className="md:col-span-2">
+        <div className="mb-40 md:col-span-2">
           <div className="sticky top-32 mt-[130px]">
             <IconCloud iconSlugs={slugs} />
           </div>
@@ -35,7 +35,7 @@ const Aboutpage = () => {
           <div className="relative">
             <TextRevealByWord
               className="text-lg text-justify"
-              text="I am Muhammad Fayash Wahyudha, a graduate in Full-stack Web Development from Purwadhika Digital Technology School. Throughout my studies, I developed a solid foundation in various web technologies and honed my skills in both frontend and backend development. I possess strong leadership abilities and excel in effective communication, allowing me to collaborate seamlessly with team members and stakeholders. My collaborative spirit drives me to foster positive working relationships, ensuring that everyone feels valued and motivated. I am a quick learner and thrive in dynamic environments, always ready to tackle new challenges head-on. My passion for technology fuels my desire to stay updated with industry trends and best practices. I am particularly excited about the potential for innovation in the tech space and am eager to contribute to projects that make a meaningful impact. I look forward to the opportunity to work on groundbreaking solutions and grow alongside talented professionals in the field."
+              text={`I am Muhammad Fayash Wahyudha, a passionate Full-Stack Web Developer based in Jakarta. I graduated from Purwadhika Digital Technology School, where I developed expertise in both frontend and backend development. My experience equips me with a strong foundation in various web technologies, allowing me to create dynamic and responsive applications. I am dedicated to delivering high-quality work and thrive in collaborative environments. With excellent communication and leadership skills, I ensure that projects run smoothly and that every team member feels valued. Eager to contribute my expertise to innovative projects, I am ready to take on new challenges in the tech industry. Let’s create something amazing together!`}
             />
           </div>
         </div>

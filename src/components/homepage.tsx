@@ -48,9 +48,9 @@ const Homepage = () => {
                 Muhammad Fayash Wahyudha
               </Cover>
               <div className="bg-transparent rounded-md p-1.5 hover:cursor-default flex ">
-                <h1 className="text-xl text-white">I'm</h1>
+                <h1 className="text-md text-white">I'm</h1>
                 <FlipWords
-                  className="text-xl text-white "
+                  className="text-md text-white "
                   words={[
                     "Web Developer",
                     "Full-Stack Developer",

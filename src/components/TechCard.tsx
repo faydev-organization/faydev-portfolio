@@ -5,7 +5,7 @@ import React from "react";
 interface TechCardProps {
   logo: StaticImageData;
   name: string;
-  level: string;
+  level?: string;
 }
 
 const TechCard: React.FC<TechCardProps> = ({ logo, name, level }) => {
@@ -24,7 +24,7 @@ const TechCard: React.FC<TechCardProps> = ({ logo, name, level }) => {
         </span>
         <div className="hidden flex-col items-center group-hover:flex transition-all duration-300">
           <span className="text-white text-center">{name}</span>
-          {level && <span className="text-gray-400 text-sm">{level}</span>}
+          {/* {level && <span className="text-gray-400 text-sm">{level}</span>} */}
         </div>
       </div>
     </div>

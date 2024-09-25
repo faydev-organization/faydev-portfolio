@@ -3,6 +3,7 @@
 import { FC, ReactNode, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { h1 } from "framer-motion/client";
 
 interface TextRevealByWordProps {
   text: string;
@@ -27,22 +28,31 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
           "sticky top-0 mx-auto flex h-[50%] max-w-4xl items-center bg-transparent px-[1rem] py-[5rem]"
         }
       >
-        <p
-          ref={targetRef}
-          className={
-            "flex flex-wrap p-5 text-[16px] font-bold text-white/20 dark:text-white/20 md:p-8 "
-          }
-        >
-          {words.map((word, i) => {
-            const start = i / words.length;
-            const end = start + 1 / words.length;
-            return (
-              <Word key={i} progress={scrollYProgress} range={[start, end]}>
-                {word}
-              </Word>
-            );
-          })}
-        </p>
+        <div className="">
+          <h1
+            className={
+              "text-xl font-bold text-gray-300 dark:text-white/20 md:text-6xl"
+            }
+          >
+            About me
+          </h1>
+          <p
+            ref={targetRef}
+            className={
+              "flex flex-wrap text-[16px] font-bold text-white/20 dark:text-white/20 mt-12 "
+            }
+          >
+            {words.map((word, i) => {
+              const start = i / words.length;
+              const end = start + 1 / words.length;
+              return (
+                <Word key={i} progress={scrollYProgress} range={[start, end]}>
+                  {word}
+                </Word>
+              );
+            })}
+          </p>
+        </div>
       </div>
     </div>
   );
