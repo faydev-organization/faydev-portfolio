@@ -45,7 +45,7 @@ const Projectpage = () => {
     >
       <div className="max-w-screen mx-auto">
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold">My Projects</h1>
+          <h1 className="text-4xl font-bold pb-20">My Projects</h1>
         </div>
         <div className="flex flex-wrap justify-center gap-10">
           {projects.map((project, index) => (
