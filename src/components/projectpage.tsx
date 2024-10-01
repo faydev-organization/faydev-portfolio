@@ -1,23 +1,39 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
 const projects = [
   {
-    title: "To Do List",
-    description: "Web untuk membuat to do list",
-    imageUrl: "/todo.png",
-    previewLink: "#",
+    title: "FayDev Portfolio",
+    description: "Personal portfolio website",
+    imageUrl: "/portfolio.png",
+    previewLink: "https://fayash-portfolio.netlify.app/",
     repoLink: "#",
-    altText: "Todo List",
+    altText: "Portfolio",
   },
   {
-    title: "FayFood Salad",
-    description: "Web produk salad",
-    imageUrl: "/umkm.png",
-    previewLink: "https://umkm-fayfood.vercel.app/",
+    title: "Fay AI Story Builder",
+    description: "AI-based story builder",
+    imageUrl: "/ai1.png",
+    previewLink: "https://ai-kids-story-builder-phi.vercel.app/",
     repoLink: "#",
-    altText: "FayFood Salad",
+    altText: "AI Builder",
+  },
+  {
+    title: "iPhone 15",
+    description: "iPhone product showcase",
+    imageUrl: "/iphone1.png",
+    previewLink: "https://vite-iphone-15.vercel.app/",
+    repoLink: "#",
+    altText: "iPhone",
+  },
+  {
+    title: "Netflix Clone",
+    description: "Netflix clone application",
+    imageUrl: "/netflix3.png",
+    previewLink: "https://netflix-clone-nextjs-nine-psi.vercel.app/",
+    repoLink: "#",
+    altText: "Netflix",
   },
   {
     title: "Idol Company",
@@ -28,6 +44,22 @@ const projects = [
     altText: "Idol Company",
   },
   {
+    title: "My Calculator",
+    description: "Web calculator application",
+    imageUrl: "/calculator.png",
+    previewLink: "https://faycalculator.netlify.app/",
+    repoLink: "#",
+    altText: "Calculator",
+  },
+  {
+    title: "FayFood Salad",
+    description: "Web produk salad",
+    imageUrl: "/umkm.png",
+    previewLink: "https://umkm-six.vercel.app/",
+    repoLink: "#",
+    altText: "FayFood Salad",
+  },
+  {
     title: "Coffee Shop",
     description: "Web produk kopi",
     imageUrl: "/kopi.png",
@@ -35,20 +67,34 @@ const projects = [
     repoLink: "#",
     altText: "Coffee Shop",
   },
+  {
+    title: "To Do List",
+    description: "Web untuk membuat to do list",
+    imageUrl: "/todo.png",
+    previewLink: "#",
+    repoLink: "#",
+    altText: "Todo List",
+  },
 ];
 
 const Projectpage = () => {
+  const [visibleProjects, setVisibleProjects] = useState(4);
+
+  const handleLoadMore = () => {
+    setVisibleProjects((prev) => prev + 4);
+  };
+
   return (
     <section
       id="project"
-      className="bg-zinc-800 text-white pt-24 pb-10 px-4 md:px-8 lg:px-16"
+      className="bg-zinc-800 top-20 text-white pt-24 pb-10 px-4 md:px-8 lg:px-16"
     >
       <div className="max-w-screen mx-auto">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold pb-20">My Projects</h1>
         </div>
-        <div className="flex flex-wrap justify-center gap-10">
-          {projects.map((project, index) => (
+        <div className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-32">
+          {projects.slice(0, visibleProjects).map((project, index) => (
             <CardContainer className="inter-var" key={index}>
               <CardBody className="bg-transparent w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
                 <CardItem
@@ -102,6 +148,16 @@ const Projectpage = () => {
             </CardContainer>
           ))}
         </div>
+        {visibleProjects < projects.length && (
+          <div className="text-center mt-8">
+            <button
+              onClick={handleLoadMore}
+              className="px-5 py-3 rounded-md text-white text-xs font-bold border border-white hover:bg-white hover:text-black"
+            >
+              Load More
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

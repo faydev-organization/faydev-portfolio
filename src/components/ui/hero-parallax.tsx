@@ -31,11 +31,11 @@ export const HeroParallax = ({
   const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
 
   const translateX = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, 1000]),
+    useTransform(scrollYProgress, [0, 1], [0, 3000]),
     springConfig
   );
   const translateXReverse = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, -1000]),
+    useTransform(scrollYProgress, [0, 1], [0, -3000]),
     springConfig
   );
   const rotateX = useSpring(
@@ -141,7 +141,6 @@ export const ProductCard = ({
       <Link
         href={product.link}
         className="block group-hover/product:shadow-2xl "
-        onClick={(e) => alert("on development")}
       >
         <Image
           src={product.thumbnail}
@@ -152,7 +151,7 @@ export const ProductCard = ({
         />
       </Link>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
+      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-gray-300">
         {product.title}
       </h2>
     </motion.div>

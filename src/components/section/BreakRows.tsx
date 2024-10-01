@@ -24,12 +24,11 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ content }) => (
 );
 
 const MarqueeDemo: React.FC = () => {
-  const firstRow = reviews.slice(0, reviews.length / 2);
-
+  // Use the entire reviews array
   return (
     <div className="border-b-[3px] border-t-[3px] border-black bg-gray-300 h-20 flex items-center text-4xl">
-      <Marquee pauseOnHover className="[--duration:20s]">
-        {firstRow.map((content, index) => (
+      <Marquee pauseOnHover className="[--duration:70s]">
+        {reviews.map((content, index) => (
           <ReviewCard key={index} content={content} />
         ))}
       </Marquee>

@@ -1,83 +1,82 @@
 "use client";
 import React from "react";
 import { HeroParallax } from "@/components/ui/hero-parallax";
-import { div } from "framer-motion/client";
 
 const products = [
   {
-    title: "Moonbeam",
-    link: "",
-    thumbnail: "/company-profile.png",
+    title: "",
+    link: "https://ai-kids-story-builder-phi.vercel.app/",
+    thumbnail: "/ai3.png",
   },
   {
-    title: "Starry Night",
-    link: "",
+    title: "",
+    link: "https://netflix-clone-nextjs-nine-psi.vercel.app/",
+    thumbnail: "/netflix1.png",
+  },
+  {
+    title: "",
+    link: "https://vite-iphone-15.vercel.app/",
+    thumbnail: "/iphone1.png",
+  },
+  {
+    title: "",
+    link: "https://ai-kids-story-builder-phi.vercel.app/",
+    thumbnail: "/ai5.png",
+  },
+  {
+    title: "",
+    link: "https://vite-iphone-15.vercel.app/",
+    thumbnail: "/iphone4.png",
+  },
+  {
+    title: "",
+    link: "https://faycalculator.netlify.app/",
+    thumbnail: "/calculator.png",
+  },
+  {
+    title: "",
+    link: "https://umkm-six.vercel.app/",
     thumbnail: "/umkm.png",
   },
   {
-    title: "Sunrise",
-    link: "",
-    thumbnail: "/todo.png",
+    title: "",
+    link: "https://vite-iphone-15.vercel.app/",
+    thumbnail: "/iphone2.png",
   },
   {
-    title: "Ocean Wave",
-    link: "",
-    thumbnail: "/kopi.png",
+    title: "",
+    link: "https://netflix-clone-nextjs-nine-psi.vercel.app/",
+    thumbnail: "/netflix3.png",
   },
   {
-    title: "Forest Whisper",
-    link: "",
+    title: "",
+    link: "https://ai-kids-story-builder-phi.vercel.app/",
+    thumbnail: "/ai2.png",
+  },
+  {
+    title: "",
+    link: "https://vite-iphone-15.vercel.app/",
+    thumbnail: "/iphone5.png",
+  },
+  {
+    title: "",
+    link: "https://netflix-clone-nextjs-nine-psi.vercel.app/",
+    thumbnail: "/netflix2.png",
+  },
+  {
+    title: "",
+    link: "https://idol-group-company.vercel.app/",
     thumbnail: "/company-profile.png",
   },
   {
-    title: "Desert Mirage",
-    link: "",
-    thumbnail: "/umkm.png",
+    title: "",
+    link: "https://vite-iphone-15.vercel.app/",
+    thumbnail: "/iphone3.png",
   },
   {
-    title: "Mountain Echo",
-    link: "",
-    thumbnail: "/todo.png",
-  },
-  {
-    title: "City Lights",
-    link: "",
-    thumbnail: "/kopi.png",
-  },
-  {
-    title: "Night Sky",
-    link: "",
-    thumbnail: "/todo.png",
-  },
-  {
-    title: "River Flow",
-    link: "",
-    thumbnail: "/company-profile.png",
-  },
-  {
-    title: "Valley View",
-    link: "",
-    thumbnail: "/kopi.png",
-  },
-  {
-    title: "Meadow Breeze",
-    link: "",
-    thumbnail: "/umkm.png",
-  },
-  {
-    title: "Twilight Dream",
-    link: "",
-    thumbnail: "/todo.png",
-  },
-  {
-    title: "Canyon Echoes",
-    link: "",
-    thumbnail: "/company-profile.png",
-  },
-  {
-    title: "Garden Path",
-    link: "",
-    thumbnail: "/kopi.png",
+    title: "",
+    link: "https://ai-kids-story-builder-phi.vercel.app/",
+    thumbnail: "/ai4.png",
   },
 ];
 

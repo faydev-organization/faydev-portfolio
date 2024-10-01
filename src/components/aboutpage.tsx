@@ -17,6 +17,9 @@ const slugs = [
   "git",
   "github",
   "visualstudiocode",
+  "postgresql",
+  "firebase",
+  "amazonaws",
 ];
 
 const Aboutpage = () => {
