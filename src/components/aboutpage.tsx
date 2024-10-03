@@ -37,7 +37,7 @@ const Aboutpage = () => {
         <div className="md:col-span-3 flex flex-col items-center">
           <div className="relative">
             <TextRevealByWord
-              className="text-md md:text-xl text-justify"
+              className="text-sm md:text-xl text-justify"
               text={`I am Muhammad Fayash Wahyudha, a passionate Full-Stack Web Developer based in Jakarta. I graduated from Purwadhika Digital Technology School, where I developed expertise in both frontend and backend development. My experience equips me with a strong foundation in various web technologies, allowing me to create dynamic and responsive applications. I am dedicated to delivering high-quality work and thrive in collaborative environments. With excellent communication and leadership skills, I ensure that projects run smoothly and that every team member feels valued. Eager to contribute my expertise to innovative projects, I am ready to take on new challenges in the tech industry. Let’s create something amazing together!`}
             />
           </div>

@@ -21,7 +21,7 @@ const Homepage = () => {
             data-aos="fade"
             data-aos-once="true"
             data-aos-delay="1000"
-            className="rounded-full object-cover w-76 h-76 md:w-[500px] md:h-auto border-4 border-white shadow-custom-white"
+            className="rounded-full object-cover w-56 h-56 md:w-[500px] md:h-auto border-4 border-white shadow-custom-white"
             src={ProfilePic}
             alt="profile"
             width={600}
