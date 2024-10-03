@@ -9,11 +9,28 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  const links = [
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#skills", label: "Skills" },
+    { href: "#project", label: "Project" },
+  ];
+
   return (
-    <nav className="bg-transparent lg:bg-opacity-30 lg:backdrop-blur-lg p-4 pt-6 fixed w-full z-50">
+    <nav
+      className={`fixed w-full z-50 p-4 pt-6 transition-all ${
+        isOpen
+          ? "bg-transparent"
+          : "bg-transparent lg:bg-opacity-30 lg:backdrop-blur-lg"
+      }`}
+    >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex-shrink-0">
           <a href="/" className="text-white text-2xl font-bold">
@@ -23,6 +40,8 @@ const Navbar = () => {
             </span>
           </a>
         </div>
+
+        {/* Mobile Menu Toggle Button */}
         <div className="block lg:hidden">
           <IconButton
             onClick={toggleMenu}
@@ -31,66 +50,34 @@ const Navbar = () => {
             {isOpen ? <CloseIcon /> : <MenuIcon />}
           </IconButton>
         </div>
+
+        {/* Desktop Menu */}
         <div className="hidden lg:flex lg:items-center lg:w-auto">
-          <div className="text-lg lg:flex-grow flex justify-center w-full">
+          {links.map(({ href, label }) => (
             <a
-              href="#home"
+              key={label}
+              href={href}
               className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mx-4"
             >
-              Home
+              {label}
             </a>
-            <a
-              href="#about"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mx-4"
-            >
-              About
-            </a>
-            <a
-              href="#skills"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mx-4"
-            >
-              Skills
-            </a>
-            <a
-              href="#project"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mx-4"
-            >
-              Project
-            </a>
-          </div>
+          ))}
         </div>
       </div>
+
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden mt-4 text-center bg-black bg-opacity-70 backdrop-blur-lg p-4 rounded-lg">
-          <a
-            href="#home"
-            className="block mt-2 text-white hover:text-gray-300"
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </a>
-          <a
-            href="#about"
-            className="block mt-2 text-white hover:text-gray-300"
-            onClick={() => setIsOpen(false)}
-          >
-            About
-          </a>
-          <a
-            href="#skills"
-            className="block mt-2 text-white hover:text-gray-300"
-            onClick={() => setIsOpen(false)}
-          >
-            Skills
-          </a>
-          <a
-            href="#project"
-            className="block mt-2 text-white hover:text-gray-300"
-            onClick={() => setIsOpen(false)}
-          >
-            Project
-          </a>
+          {links.map(({ href, label }) => (
+            <a
+              key={label}
+              href={href}
+              className="block mt-2 text-white hover:text-gray-300"
+              onClick={closeMenu}
+            >
+              {label}
+            </a>
+          ))}
         </div>
       )}
     </nav>

@@ -14,14 +14,14 @@ import { useRouter } from "next/navigation";
 const Home = () => {
   const router = useRouter();
 
-  useEffect(() => {
-    // Show alert for mobile users
-    if (window.innerWidth < 768) {
-      alert("Please use a desktop for the best experience.");
-    }
+  // useEffect(() => {
+  //   // Show alert for mobile users
+  //   if (window.innerWidth < 768) {
+  //     alert("Please use a desktop for the best experience.");
+  //   }
 
-    router.replace("/");
-  }, [router]);
+  //   router.replace("/");
+  // }, [router]);
 
   return (
     <main>
