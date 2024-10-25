@@ -1,32 +1,19 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
-import Homepage from "@/components/homepage";
-import Aboutpage from "@/components/aboutpage";
-import Skills from "@/components/pageComp/skills";
-import Previews from "@/components/Previews";
-import Projectpage from "@/components/projectpage";
-import BreakRows from "@/components/section/BreakRows";
+import Hero from "@/components/section/Hero";
+import Aboutpage from "@/components/section/About";
+import Skills from "@/components/section/Skills";
+import Previews from "@/components/section/Previews";
+import Projectpage from "@/components/section/Project";
+import BreakRows from "@/components/BreakRows";
 // import Contactpage from "@/components/contactpage";
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 
 const Home = () => {
-  const router = useRouter();
-
-  // useEffect(() => {
-  //   // Show alert for mobile users
-  //   if (window.innerWidth < 768) {
-  //     alert("Please use a desktop for the best experience.");
-  //   }
-
-  //   router.replace("/");
-  // }, [router]);
-
   return (
     <main>
       <Navbar />
-      <Homepage />
+      <Hero />
       <BreakRows />
       <Aboutpage />
       <Previews />
